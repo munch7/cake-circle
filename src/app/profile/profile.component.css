@@ -1,0 +1,42 @@
+.design{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    width: auto;
+    padding: auto;
+}
+
+button{
+    width: auto;
+    margin: 6px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: orange;
+    font-size: 15px;
+    border: none;
+    color: white;
+}
+button:hover{
+    background-color: transparent;
+    color: orange;
+    font-size: 18px;
+
+}
+input{
+    width: 20%;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1 gray;
+    text-align: center;
+}
+
+.col{
+    top: 20px
+}
+
+.is-dark{
+    background-color: rgb(31, 31, 31);
+    align-items: center;
+}
