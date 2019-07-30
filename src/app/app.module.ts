@@ -14,6 +14,8 @@ import { TableComponent } from './head/table/table.component';
 import { ContactsComponent } from './head/contacts/contacts.components';
 import { HomeComponent } from './home/home.component';
 import { EditComponent } from './profile/edit/edit.component';
+import { FootComponent } from './foot/foot.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { EditComponent } from './profile/edit/edit.component';
     TableComponent,
     ContactsComponent,
     HomeComponent,
-    EditComponent
+    EditComponent,
+    FootComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

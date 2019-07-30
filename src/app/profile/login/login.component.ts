@@ -7,6 +7,7 @@ import { stringify } from '@angular/compiler/src/util';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  @Input() element : {username: string, email: string, password:string}
 
   constructor() { }
 
