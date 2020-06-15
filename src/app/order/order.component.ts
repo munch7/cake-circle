@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-order',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent {
-    
+  chris = "";
+  
+  submi(){
+    this.chris = "christine",
+    console.log("submitted")
+  }
 }

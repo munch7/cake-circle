@@ -1,68 +1,9 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12" style="text-align: left">
-            <p>
-                Hi there, What is your name?
-            </p>
-        </div>
-        <div class="col-xs-12" style="text-align: right">
-                <p>{{ serverCreationStatus }} {{ serverStatus }}</p>
-        </div>
-    </div><div class="row">
-            <div class="col-xs-12" style="text-align: left">
-                <p>
-                    {{ location }}
-                </p>
-            </div>
-            <div class="col-xs-12" style="text-align: right">
-                    <p>
-                        {{ deliver }}
-                    </p>
-            </div>
-        </div>
-    <div class="row">
-        <div class="col-xs-2">
-            <input
-                type="text"
-                class="form-control"
-                (input)="onUpdateName($event)">
-        </div>
-        <div class="col-xs-1">
-            <button
-                class="btn btn-primary"
-                [disabled]="!allowNewServer"
-                (click) ="onCreateServer()">Enter
-            </button>
-        </div>
-    </div>
-    <hr>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <img src="assets/img/IMG-20190813-WA0009.jpg" style="width: 300px">
+    <img src="assets/img/IMG-20190813-WA0012.jpg" style="width: 300px">
+    <img src="assets/img/IMG-20190813-WA0008.jpg" style="width: 300px">
+    <img src="assets/img/IMG-20190813-WA0007.jpg" style="width: 300px">
+    <img src="assets/img/IMG-20190813-WA0011.jpg" style="width: 300px">
+  </div>
 </div>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <a href="#">
-              <div
-                class="col-md-6"
-                style="background-color: rgb(224, 71, 255);
-                  text-align: middle;
-                  font-family: 'Courier New', Courier, monospace;
-                  color: white;
-                  height: 150px;">
-                Click <a href="[app-table]">here</a> to beging...
-              </div>
-            </a>
-            <a href="#">
-              <div 
-                class="col-md-6"
-                style="background-color: rgb(240, 163, 255);
-                  text-align: middle;
-                  font-family: 'Courier New', Courier, monospace;
-                  color: white;
-                  height: 150px;">
-                ... or <a href="#">here</a>
-              </div>
-            </a>
-          </div>
-        </div>
-    </body>

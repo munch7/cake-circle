@@ -1,23 +1,20 @@
-<nav class="navbar navbar-default nav" style="font-size: small">
-    <div class="navbar-header">
-      <a routerLink="/home" routerLinkActive="active" class="navbar-brand">Home</a>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="van"><a routerLink="/welcome" routerLinkActive="active">Welcome...</a></li>
-        <li class="van"><a routerLink="/table" routerLinkActive="active">Menu</a></li>
-        <li class="van"><a routerLink="/contacts" routerLinkActive="active">Contact us...</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown" appDropdown>
-          <button class="dropdown-toggle tse">
-            Profile<span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu signs">
-            <li><a  routerLink="/profile/login" routerLinkActive="active">Login</a></li>
-            <li><a  routerLink="/signup" routerLinkActive="active">Signup</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-</nav>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h1>Cake-360</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <nav class="navbar navbar-default nav">
+        <div class="navbar-header">
+          <a routerLink="/home" routerLinkActive="active" class="navbar-brand" style="color: white">Home</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ol class="nav navbar-nav">
+            <li class="van"><a routerLink="/welcome" routerLinkActive="active" style="color: white">Welcome...</a></li>
+            <li class="van"><a routerLink="/table" routerLinkActive="active" style="color: white">Menu</a></li>
+          </ol>
+        </div>
+    </nav>
+  </div>
+</div>

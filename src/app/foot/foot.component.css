@@ -1,9 +1,6 @@
 footer{
-    position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 150px;
-    /* background-color: rgb(41, 38, 251);
-    color: white; */
+    height: auto;
     text-align: center;
 }

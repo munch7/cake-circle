@@ -1,0 +1,17 @@
+.word{
+    font-size: 30px;
+    color: rgb(255, 109, 133);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+row{
+    height: auto;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: rgb(255, 123, 145);
+}
+
+img{
+    margin: 8px;
+}

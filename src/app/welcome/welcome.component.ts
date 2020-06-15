@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
   allowNewServer = false;
-  serverName= '';
-  serverCreationStatus = '';
-  serverStatus = '';
+  alloNew = false;
+  userName= '';
+  profileCreation = '';
+  profileWelcome = '';
   location = "" ;
+  locate = "";
+  locale = "";
   deliver = "";
 
   constructor()  { 
@@ -23,14 +26,23 @@ export class WelcomeComponent implements OnInit {
   ngOnInit() {
   }
   onCreateServer() {
-    this.serverCreationStatus = 'Nice to meet you '+ this.serverName;
-    this.serverStatus = ', welcome to new Delish';
+    this.profileCreation = 'Nice to meet you '+ this.userName;
+    this.profileWelcome = ', welcome to Cake 360';
     setTimeout(() => {
-      this.location = 'Where are u from '+ this.serverName;
+      this.location = 'Where are you from '+ this.userName;
+      this.deliver = "?"
     }, 3000);
   }
 
+  onCreateLocal() {
+    this.locale = this.userName + " from " + this.locate;
+  }
+
   onUpdateName(event: any) {
-    this.serverName = (<HTMLInputElement>event.target).value;
+    this.userName = (<HTMLInputElement>event.target).value;
+  }
+
+  onUpdateLocation(event: any) {
+    this.locate = (<HTMLInputElement>event.target).value;
   }
 }
