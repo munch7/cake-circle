@@ -1,3 +1,7 @@
 body{
-    padding: 6px
+    padding: 6px;
+    background: url(https://pbs.twimg.com/profile_images/1154397164921073665/258m_O5z.jpg);
+    background-size: 100%;
+    width: 701;
+    height: 1024px;    
 }
