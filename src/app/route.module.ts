@@ -16,7 +16,7 @@ const routes: Routes = [
     component: TableComponent
   },
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {

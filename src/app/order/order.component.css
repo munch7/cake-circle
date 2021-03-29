@@ -1,12 +1,10 @@
 .fom{
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 123, 145);
 }
 
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 80px;
-    color: rgb(255, 123, 145);
     padding: 30px;
 }
 .six{
@@ -20,18 +18,16 @@ h1{
 
 .butt{
     border-radius: 8px;
-    border: none;
+    border: 1;
     background-color: transparent;
-    color: rgb(255, 123, 145);
     width: 120px;
     padding: 10px;
     margin: 10px;
     font-size: 30px;
 }
 .butt:hover{
-    border: none;
-    background-color:rgb(255, 123, 145);
-    color: black;
+    border: 1;
+    background-color:rgb(248, 66, 97);
 }
 
 .desc{
