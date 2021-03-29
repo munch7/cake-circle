@@ -6,8 +6,10 @@ footer{
 }
 .pad{
     padding: 10px;
+    font-size: large;
 }
 .row{
     background: rgb(248, 66, 97);
     margin: 0ch;
+    margin-top: 20px;
 }
