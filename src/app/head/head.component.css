@@ -26,3 +26,22 @@ h1{
         linear-gradient(to top right, blue, transparent);
     background-blend-mode: screen;
 } */
+
+.toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+  
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+  
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  .spacer{
+      flex: 1;
+  }
