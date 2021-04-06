@@ -11,5 +11,7 @@ footer{
 .row{
     background: rgb(248, 66, 97);
     margin: 0ch;
+    padding: 0%;
     margin-top: 20px;
+    width: 100%;
 }

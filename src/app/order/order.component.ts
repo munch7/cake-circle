@@ -6,6 +6,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent {
+  name="";
+  location;
+  
   chris = "";
   
   submi(){

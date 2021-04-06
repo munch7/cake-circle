@@ -7,4 +7,5 @@ body{
     linear-gradient(rgb(241, 98, 98), transparent),
     linear-gradient(to top left, rgb(248, 173, 34), transparent),
     linear-gradient(to top right, rgb(255, 52, 52), transparent);
+    padding: 0%;
 }
