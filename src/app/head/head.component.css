@@ -9,13 +9,13 @@
 
 .nav{
     font-size: 20px;
-    background-color: rgb(248, 66, 97);
+    background-color: transparent;
     border: 0ch;
     border-radius: 20px;
 }
 
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: fantasy;
     font-size: 80px;
     color: auto;
 }

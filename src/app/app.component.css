@@ -4,8 +4,8 @@ body{
 }
 .bac{
     background: 
-    linear-gradient(rgb(241, 98, 98), transparent),
-    linear-gradient(to top left, rgb(248, 173, 34), transparent),
-    linear-gradient(to top right, rgb(255, 52, 52), transparent);
+    linear-gradient(rgb(255, 128, 223), transparent),
+    linear-gradient(to top left, white, transparent),
+    linear-gradient(to top right,rgb(252, 161, 229), transparent);
     padding: 0%;
 }
