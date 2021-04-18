@@ -9,9 +9,9 @@ footer{
     font-size: large;
 }
 .row{
-    background: rgb(255, 128, 223);
     margin: 0ch;
     padding: 0%;
     margin-top: 20px;
     width: 100%;
+    background: rgb(255, 128, 223);
 }

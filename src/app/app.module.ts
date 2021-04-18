@@ -9,13 +9,17 @@ import { TableComponent } from './table/table.component';
 import { HomeComponent } from './home/home.component';
 import { FootComponent } from './foot/foot.component';
 import { OrderComponent } from './order/order.component';
+import { CakesComponent } from './welcome/cakes/cakes.component';
+import { CupcakesComponent } from './welcome/cupcakes/cupcakes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     WelcomeComponent,
+    CakesComponent,
     TableComponent,
+    CupcakesComponent,
     HomeComponent,
     FootComponent,
     OrderComponent
