@@ -3,7 +3,7 @@ body{
 }
 img{
     height: 90px;
-    width: 100px;
+    width: auto;
     margin: 0px;
     border-radius: 20px;
 }
@@ -13,4 +13,8 @@ button{
     margin: 0px;
     border-radius: 20px;
     border: 0ch;
+}
+.row{
+    margin: 0%;
+    padding: 0%;
 }

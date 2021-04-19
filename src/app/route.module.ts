@@ -9,22 +9,13 @@ import { CakesComponent } from './welcome/cakes/cakes.component';
 import { CupcakesComponent } from './welcome/cupcakes/cupcakes.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'welcome', component: WelcomeComponent, children: [
     { path: 'cakes', component: CakesComponent }, 
     { path: 'cupcakes', component: CupcakesComponent }
-  ]  },
-  {
-    path: 'table',
-    component: TableComponent
-  },
-  {
-    path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'order',
-    component: OrderComponent
-  }
+  ]},
+  { path: 'table', component: TableComponent },
+  { path: 'order', component: OrderComponent }
 ];
 
 @NgModule({
