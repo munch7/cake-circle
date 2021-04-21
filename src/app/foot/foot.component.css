@@ -3,15 +3,16 @@ footer{
     width: 100%;
     height: auto;
     text-align: center;
+    position: fixed;
+    background: rgb(255, 128, 223);
 }
 .pad{
-    padding: 10px;
+    padding: 6px;
     font-size: large;
 }
 .row{
     margin: 0ch;
+    margin-top: 100px;
     padding: 0%;
-    margin-top: 20px;
     width: 100%;
-    background: rgb(255, 128, 223);
 }

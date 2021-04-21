@@ -11,6 +11,10 @@ import { FootComponent } from './foot/foot.component';
 import { OrderComponent } from './order/order.component';
 import { CakesComponent } from './welcome/cakes/cakes.component';
 import { CupcakesComponent } from './welcome/cupcakes/cupcakes.component';
+import { CookiesComponent } from './welcome/cookies/cookies.component';
+import { OffersComponent } from './welcome/offers/offers.component';
+import { HealthComponent } from './welcome/health/health.component';
+import { BreadsComponent } from './welcome/breads/breads.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { CupcakesComponent } from './welcome/cupcakes/cupcakes.component';
     CakesComponent,
     TableComponent,
     CupcakesComponent,
+    CookiesComponent,
+    OffersComponent,
+    HealthComponent,
+    BreadsComponent,
     HomeComponent,
     FootComponent,
     OrderComponent

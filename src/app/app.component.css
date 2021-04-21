@@ -1,11 +1,11 @@
 body{
-    padding: 6px;
+    padding: 0px;
     margin: 0%;
-}
-.bac{
     background: 
     linear-gradient(rgb(255, 128, 223), transparent),
     linear-gradient(to top left, white, transparent),
     linear-gradient(to top right,white, transparent);
     padding: 0%;
+    margin: 0%;
+    font-family: monospace;
 }
