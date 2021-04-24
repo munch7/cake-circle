@@ -5,6 +5,8 @@ footer{
     text-align: center;
     position: fixed;
     background: rgb(255, 128, 223);
+    padding: 10px;
+    margin: 0px
 }
 .pad{
     padding: 6px;

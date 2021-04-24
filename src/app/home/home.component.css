@@ -11,6 +11,7 @@ h2{
 img{
     margin: 8px;
 }
-.container{
-    color: auto;
+.com, .row{
+    margin: 0%;
+    padding: 0%;
 }

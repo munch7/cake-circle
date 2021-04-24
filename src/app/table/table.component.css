@@ -24,3 +24,13 @@ main {
   .tess{
     padding: 8px;
   }
+
+.container{
+  margin: 0%;
+  padding: 20px;
+  width: 100%;
+  font-size: 19px;
+}
+th{
+  color: red;
+}
