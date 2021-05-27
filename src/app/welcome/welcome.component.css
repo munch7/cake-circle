@@ -2,19 +2,31 @@ body{
     background-color: transparent;
 }
 img{
-    height: 90px;
-    width: auto;
+    height: 115px;
+    width: 100%;
     margin: 0px;
+    padding: 0px;
     border-radius: 20px;
 }
 button{
-    height: 90px;
-    width: 100px;
+    width: 90%;
+    height: 120px;
     margin: 0px;
+    padding: 0%;
     border-radius: 20px;
-    border: 0ch;
+    border: 1;
+    border-color: rgb(250, 64, 166);
+    background: transparent;
 }
 .row{
     margin: 0%;
     padding: 0%;
+    min-height: 300px;
+}
+.tab{
+    height: 140px;
+    text-align: center;
+    font-size: large;
+    margin: 0px;
+    padding: 0px;
 }

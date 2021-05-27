@@ -2,7 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1{
+p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 80px;
     padding: 30px;
@@ -35,4 +35,8 @@ h1{
 .desc{
     height: 200px;
     width: 100%
+}
+.row{
+    margin: 0px;
+    padding: 0px
 }

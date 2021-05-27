@@ -4,7 +4,7 @@ main {
   }
   
   table {
-    max-width: 100%;
+    width: 100%;
   }
   
   tr:nth-child(odd) {
@@ -27,7 +27,7 @@ main {
 
 .container{
   margin: 0%;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   font-size: 19px;
 }

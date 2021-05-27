@@ -16,24 +16,53 @@
     background-color: transparent;
     border: 0ch;
     border-radius: 20px;
+    margin: 0%;
+    padding: 0%;
 }
 
 h1{
     font-size: 80px;
-    color: auto;
+    color: rgb(250, 64, 166);
 }
 .content{
   align-self: right;
 }
 .link{
-  margin: 20px;
+  margin: 10px;
   font-size: 30px;
-  color: white;
+  color: auto;
+  color: rgb(250, 64, 166);
 }
 .lip{
-  color: white;
+  color: auto;
   font-size: large;
 }
-a :hover, a :active{
-  color: rgb(245, 47, 195);
+li{
+  width: 160px;
+  text-align: center;
+  color: black;
+}
+li:hover{
+  /* background: rgb(252, 62, 204); */
+  border-radius: 20px;
+}
+img{
+  width: 100%;
+  padding-top: 40px;
+  /* padding-left: 20px;
+  margin: 10px; */
+}
+a{
+  /* color: rgb(250, 64, 166); */
+  font-size: xx-large;
+}
+.pad{
+  padding: 0%;
+  margin: 0%;
+}
+.navbar-nav>li>a{
+  color: rgb(250, 64, 166);
+}
+.navbar-nav>li>a:active{
+  color: black;
 }

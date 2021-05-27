@@ -1,20 +1,19 @@
-footer{
+.row, footer{
     bottom: 0px;
     width: 100%;
     height: auto;
     text-align: center;
-    position: fixed;
     background: rgb(255, 128, 223);
     padding: 10px;
-    margin: 0px
+    margin: 0px;
+    margin: 0ch;
+    padding: 0%;
+    width: 100%;
 }
 .pad{
     padding: 6px;
     font-size: large;
 }
-.row{
-    margin: 0ch;
-    margin-top: 100px;
-    padding: 0%;
-    width: 100%;
+p{
+    padding: 6px;
 }

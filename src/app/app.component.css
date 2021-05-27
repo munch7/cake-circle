@@ -2,8 +2,6 @@ body{
     padding: 0px;
     margin: 0%;
     background: 
-    linear-gradient(rgb(255, 128, 223), transparent),
-    linear-gradient(to top left, white, transparent),
-    linear-gradient(to top right,white, transparent);
-    font-family: monospace;
+    linear-gradient( white, rgb(255, 128, 223));
+    font-family: 'Charm', cursive;
 }
