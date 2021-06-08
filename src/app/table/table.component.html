@@ -1,9 +1,11 @@
 <div class="container" align="center">
   <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
-      <div class="col-md-7 col-sm-12 col-xs-12" style="margin-bottom: 0px;">
-        <table>
-          <tr><td><b>Flavor</b></td><td><b>1 kg</b></td><td><b>2 kg</b></td><td><b>3 kg</b></td><td><b>4 kg</b></td></tr>
+    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" style="padding: 0px;">
+      <table class="table table-striped">
+        <thead>
+          <tr><td>Flavor</td><td>1 kg</td><td>2 kg</td><td>3 kg</td><td>4 kg</td></tr>
+        </thead>
+        <tbody>
           <tr><td>Vanilla</td><td>1,800</td><td>3,000</td><td>3,900</td><td>4,600</td></tr>
           <tr><td>Orange</td><td>1,800</td><td>3,000</td><td>3,900</td><td>4,600</td></tr>
           <tr><td>Marble</td><td>1,800</td><td>3,000</td><td>3,900</td><td>4,600</td></tr>
@@ -18,24 +20,23 @@
           <tr><td>Pina colada</td><td>2,000</td><td>3,200</td><td>4,100</td><td>4,900</td></tr>
           <tr><td>Oreo</td><td>2,000</td><td>3,200</td><td>4,100</td><td>4,900</td></tr>
           <tr><td>Fruit cake</td><td>2,400</td><td>3,600</td><td>4,600</td><td>5,400</td></tr>
-        </table>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-4 col-sm-5 col-xs-12" style="align-content: center; text-align: center; margin: 0px;">
-        <table>
+        </tbody>
+      </table>
+      <table class="table table-striped">
+        <tbody>
           <tr><td>Oatmeal cookies</td><td>190/= (small pack) 350/= (medium)</td></tr>
           <tr><td>Banana bread</td><td>200/=</td></tr>
           <tr><td>Cupcakes</td><td>80/= each (min - 6 pieces)</td></tr>
           <tr><td>Customized cupcakes</td><td>100/= each (min - 6 pieces)</td></tr>
           <tr><td>Rainbow cake</td><td>4,200/=</td></tr>
           <tr><td>Edible print</td><td>200/= 300/= (A5) & 600/= (A4 size)</td></tr>
-        </table>
-      </div>
+        </tbody>
+      </table>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12">
-      <p style="margin: 20px; font-size: larger;">PS: Confirm order by paying 50% deposit of the total. Minimum order time is 72hrs.</p>
-      <hr>
+      <marquee style="margin: 20px; font-size: xx-large;">PS: Confirm order by paying 50% deposit of the total. Minimum order time is 72hrs.</marquee>
     </div>
+    <hr style="width: 90%; background: white; border-radius: 50%;">
     <app-order *ngIf="loadedFeature === 'order'"></app-order>
   </div>
 </div>

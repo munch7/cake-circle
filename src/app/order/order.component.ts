@@ -9,7 +9,7 @@ export class OrderComponent {
   name="";
   location;
   
-  chris = "";
+  chris = "";   
   
   submi(){
     this.chris = "christine",

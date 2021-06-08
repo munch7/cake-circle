@@ -2,7 +2,7 @@ body{
     background-color: transparent;
 }
 img{
-    height: 115px;
+    height: auto;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -10,7 +10,7 @@ img{
 }
 button{
     width: 90%;
-    height: 120px;
+    height: auto;
     margin: 0px;
     padding: 0%;
     border-radius: 20px;
@@ -21,12 +21,21 @@ button{
 .row{
     margin: 0%;
     padding: 0%;
-    min-height: 300px;
 }
 .tab{
-    height: 140px;
+    height: auto;
     text-align: center;
     font-size: large;
     margin: 0px;
     padding: 0px;
+}
+.col-md-6{
+    margin: 0%;
+    padding: 0%;
+}
+.hei{
+    min-height: 360px;
+}
+.col-md-6{
+    margin-bottom: 20px;
 }

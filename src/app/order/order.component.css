@@ -1,5 +1,7 @@
 .fom{
     font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 10px;
 }
 
 p{
@@ -39,4 +41,8 @@ p{
 .row{
     margin: 0px;
     padding: 0px
+}
+select{
+    width: 100%;
+    margin: 10px
 }
