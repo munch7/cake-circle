@@ -1,4 +1,4 @@
-body{
+.body{
     background-color: transparent;
 }
 img{
@@ -8,13 +8,17 @@ img{
     padding: 0px;
     border-radius: 20px;
 }
+.pad{
+    padding: 0ch;
+    margin: 0ch;
+}
 button{
     width: 90%;
     height: auto;
     margin: 0px;
     padding: 0%;
     border-radius: 20px;
-    border: 1;
+    border: 0;
     border-color: rgb(250, 64, 166);
     background: transparent;
 }

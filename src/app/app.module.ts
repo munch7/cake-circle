@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeadComponent } from './head/head.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RouteModule } from './route.module';
 import { TableComponent } from './table/table.component';
@@ -15,11 +14,11 @@ import { CookiesComponent } from './welcome/cookies/cookies.component';
 import { OffersComponent } from './welcome/offers/offers.component';
 import { HealthComponent } from './welcome/health/health.component';
 import { BreadsComponent } from './welcome/breads/breads.component';
+import { UsComponent } from './about us/us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeadComponent,
     WelcomeComponent,
     CakesComponent,
     TableComponent,
@@ -30,7 +29,8 @@ import { BreadsComponent } from './welcome/breads/breads.component';
     BreadsComponent,
     HomeComponent,
     FootComponent,
-    OrderComponent
+    OrderComponent,
+    UsComponent
   ],
   imports: [
     BrowserModule,

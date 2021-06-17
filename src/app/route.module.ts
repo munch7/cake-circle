@@ -11,9 +11,12 @@ import { CookiesComponent } from './welcome/cookies/cookies.component';
 import { BreadsComponent } from './welcome/breads/breads.component';
 import { HealthComponent } from './welcome/health/health.component';
 import { OffersComponent } from './welcome/offers/offers.component';
+import { UsComponent } from './about us/us.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'us', component: UsComponent },
   { path: 'welcome', component: WelcomeComponent, children: [
     { path: 'cakes', component: CakesComponent }, 
     { path: 'cupcakes', component: CupcakesComponent },

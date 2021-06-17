@@ -1,7 +1,32 @@
-<body class="bac">
+<body>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
-        <app-head></app-head>
-        <router-outlet></router-outlet>
+        <link rel="stylesheet" target="blank" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        <h1>
+                <div class="col-xs-12 col-sm-7 col-md-6">
+                        <img src="../../assets/img/logo.PNG">Cake 360
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-6">
+                  <a target="blank" href="https://facebook.com/cake360ke"><i class="fa fa-facebook"></i></a>
+                  <a target="blank" href="https://instagram.com/cake360ke"><i class="fa fa-instagram"></i></a>
+                  <a target="blank" href="https://twitter.com/cake360ke"><i class="fa fa-twitter"></i></a>
+                </div>
+        </h1>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+                <nav>
+                        <button routerLink="/home" routerLinkActive="active">Home</button>
+                        <button routerLink="/us" routerLinkActive="active">Our Story</button>
+                        <button routerLink="/welcome" routerLinkActive="active">Menu</button>
+                        <button routerLink="/table" routerLinkActive="active">Price List</button>
+                        <button routerLink="/order" routerLinkActive="active">Order</button>
+                </nav>
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 10px; margin: 0px;">
+                <router-outlet></router-outlet>
+        </div>
         <app-foot></app-foot>
 </body>

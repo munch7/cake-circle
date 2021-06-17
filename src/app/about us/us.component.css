@@ -4,12 +4,11 @@ p{
 }
 h2{
     font-size: 50px;
-    margin: 10px;
 }
 img{
     margin: 8px;
 }
-.com, .row{
+.com{
     margin: 0%;
-    padding: 0%;
+    padding: 0px;
 }
