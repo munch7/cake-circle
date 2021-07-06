@@ -15,6 +15,7 @@ import { OffersComponent } from './welcome/offers/offers.component';
 import { HealthComponent } from './welcome/health/health.component';
 import { BreadsComponent } from './welcome/breads/breads.component';
 import { UsComponent } from './about us/us.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UsComponent } from './about us/us.component';
   ],
   imports: [
     BrowserModule,
-    RouteModule
+    RouteModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })

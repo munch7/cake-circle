@@ -1,24 +1,61 @@
-<div class="row">
-    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="background: white;">
-        <form method="post fom" action="subscriberform.php"
-        enctype="multipart/form-data" name="EmailForm"
-        oninput="x.value=parseInt(product.value)*parseInt(quantity.value)">
-        <!-- action=" mailto: francismburu75@gmail.com" method="POST"  -->
-            <div class="col-md-12 col-xs-12" align=center>
+<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12" style="background: white; padding: 10px;" *ngIf="!submitted">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="col-md-12 col-sm-12 col-xs-12" align=center>
                 <img src="../../assets/img/logo.PNG" style="width: 40%">
-                <p align="center">Order form</p>
+                <h1>Order form</h1>
             </div>
 
-            <div class="col-md-12">
-                <div class="col-md-4 col-sm-6">
-                    <input [required]="true" type="text" class="form-control six" placeholder="Name" name=name>
+            <div 
+                id="userData" 
+                ngModelGroup="userData"
+                #userData="ngModelGroup">
+                <div class="form-group col-md-5 col-sm-5 col-xs-12">
+                    <input 
+                        required 
+                        type="text" 
+                        class="form-control "
+                        placeholder="Name" 
+                        ngModel 
+                        name=name>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <input type="text" class="form-control six" placeholder="Location" name=location>
+                <div class="form-group col-md-3 col-sm-3 col-xs-6">
+                    <input 
+                        required 
+                        type="tel" 
+                        placeholder="Tel" 
+                        name="contact" 
+                        class="form-control"
+                        ngModel
+                    >
                 </div>
-                <div class="col-md-5 col-sm-3">
-                    <select id="product">
-                        <option value="Vanilla" id="V">Vanilla</option>
+                <div class="form-group col-md-4 col-sm-4 col-xs-6">
+                    <select
+                        name="location"
+                        ngModel
+                        required
+                        class="form-control"
+                        [ngModel]="default1">
+                        <option value="kiambu">Kiambu</option>
+                        <option value="nairobi">Nairobi</option>
+                        <option value="environs">Environs</option>
+                    </select>
+                </div>
+                <p *ngIf="!userData.valid && userData.touched">User Data is invalid!</p>
+            </div>
+            <div 
+                id="productData" 
+                ngModelGroup="productData"
+                #productData="ngModelGroup">
+                <div class="form-group col-md-4 col-sm-4 col-xs-6">
+                    <select 
+                        id="product" 
+                        class="form-control"
+                        [ngModel]="defaultQuestion" 
+                        ngModel
+                        name="product"
+                        required
+                    >
+                        <option value="Vanilla">Vanilla</option>
                         <option value="Orange">Orange</option>
                         <option value="Marble">Marble</option>
                         <option value="Raspberry">Raspberry</option>
@@ -36,37 +73,74 @@
                         <option value="Other">Others</option>
                     </select>
                 </div>
+                <div class="form-group col-md-2 col-sm-2 col-xs-6">
+                    <input 
+                        type="number" 
+                        class="form-control" 
+                        id="quantity" 
+                        name="quantity" 
+                        placeholder="in kgs"
+                        ngModel
+                        required
+                    >
+                </div>
+                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <textarea
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Description" 
+                        name="description"
+                        ngModel
+                        required
+                    ></textarea>
+                </div>
+                <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                    <input 
+                        required 
+                        type="date" 
+                        placeholder="Delivery Date" 
+                        name="date" 
+                        class="form-control"
+                        ngModel
+                    >
+                </div>
+                <p *ngIf="!productData.valid && productData.touched">Product Data is invalid!</p>
             </div>
+                <div class="form-group col-md-6 col-sm-6 col-xs-6">
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        name="email" 
+                        class="form-control"
+                        ngModel
+                        ngModelGroup="userData"
+                        #email="ngModel"
+                        email
+                    >
+                </div>
             
-            <div class="col-md-12">
-                <div class="col-md-2 col-sm-2">
-                    <input type="number" class="form-control four" id="quantity" name="quantity" placeholder="in kgs" min="1" max="5">
-                </div>
-                <div class="col-md-4 col-sm-3">
-                    <input type="currency" class="form-control four" placeholder="Price" name="price">
-                    <output name="price" for="product * quantity"></output>
-                </div>
-                <div class="col-md-6 col-sm-4">
-                    <input [required]="true" type="tel" placeholder="Tel" name="contact" class="form-control four">
-                </div>
+            <div class="col-md-4 col-sm-4 col-xs-5">
+                <input 
+                    type="currency" 
+                    class="form-control" 
+                    placeholder="Price" 
+                    name="price"
+                    ngModel
+                >
+                <!-- <output name="price" for="product * quantity"></output> -->
             </div>
 
-            <div class="col-md-12">
-                <div class="col-md-6">
-                    <input type="text" class="form-control four desc" placeholder="Description" name="description">
-                </div>
-                <div class="col-md-6 col-md-ofset-3 col-sm-6">
-                    <input type="email" placeholder="Email" name="email" class="form-control four">
-                </div>
-                <div class="col-md-6 col-md-ofset-3 col-sm-6">
-                    <input [required]="true" type="date" placeholder="Delivery Date" name="date" class="form-control four">
-                    <label>Delivery Date</label>
-                </div>
-                <div class="col-md-3 col-md-offset-9 col-sm-3 col-sm-offset-9 col-xs-5 col-xs-offset-7" align=center>
-                    <button class="butt" (click)="submi()" style="font-size: xxx-large;">order</button>
-                </div>
+            <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-5 col-xs-offset-2" align=center>
+                <button type="submit">order</button>
             </div>
 
         </form>
     </div>
-</div>
+    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" *ngIf="submitted">
+        <h2>Order Placed</h2>
+        <p>Name: {{ user.name }}</p>
+        <p>Phone: {{ user.phone }}</p>
+        <p>Location: {{ user.location }}</p>
+        <p>Ordered: {{ order }} {{ amount }}kgs</p>
+        <P>By: {{ date }}</P>
+    </div>
